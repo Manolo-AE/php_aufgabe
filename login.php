@@ -14,7 +14,7 @@ if (isset($_POST['email'])) {
   }
   else
   {
-    $error =  "user pass wrong";
+    $error =  "user password is wrong";
   }
  
 }
@@ -22,7 +22,7 @@ include('./template/navbar.php');
 
 ?>
 <div class="m-3">
-  <h1>Login</h1>
+  <h1></h1>
   
   <div class="card flex m-5 p-5 bg-secondary bg-opacity-10">
   <?= $email ?>
@@ -38,7 +38,7 @@ include('./template/navbar.php');
         <input name="password" type="text" class="form-control" id="exampleInputPassword1" placeholder="Password">
       </div>
       <br>
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Login</button>
   </div>
   </form>
 </div>

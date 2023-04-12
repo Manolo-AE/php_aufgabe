@@ -25,7 +25,7 @@ $answerSelectQurey = $qp->selectQuery($selectQuery);
 ?>
 
 <div class="container pt-3">
-    <h3>DAA AE this is dev</h3>
+    <h3>DAA AE</h3>
     <?=var_dump($answerSelectQurey)?>
 </div>
 

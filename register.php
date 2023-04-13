@@ -8,10 +8,12 @@ require_once('./app/view/RegisterView.php');
  $registerView->validateUserPost();
  $userExist = $registerView->checkIfUserExisted();
  var_dump($userExist);
- if(!$userExist)
+ if (isset($registerView->email))
  {
-  
-  $registerView->register();
+  if(!$userExist)
+  {
+    $registerView->register();
+  }
  }
 ?>
 
@@ -22,12 +24,12 @@ require_once('./app/view/RegisterView.php');
 <?=$registerView->component?>
   <div class="form-group">
 
-    <label for="exampleInputEmail1">Email address</label>
+    <label for="exampleInputEmail1">Email Address:</label>
     <input  name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <small id="emailHelp" class="form-text text-muted">We'll never share personal information.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
+    <label for="exampleInputPassword1">Password:</label>
     <input  name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" minlength="4">
   </div>
 

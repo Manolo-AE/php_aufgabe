@@ -1,6 +1,6 @@
 <?php
 /*
-* By Anonymous
+* By Stefan Schumacher
 */
 namespace App\Table;
 use Table\Database\QueryProvider;

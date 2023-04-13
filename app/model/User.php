@@ -13,7 +13,7 @@ class User extends UserTable
     }
 
 
-public function createUser(string $email, string $password): int|null
+public function create(string $email, string $password): int|null
 {
     $password = $this->hashPassword($password);
     return $this->insert($email, $password, false);

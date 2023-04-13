@@ -15,7 +15,7 @@ require_once('./app/view/RegisterView.php');
  }
 ?>
 
-<h1></h1>
+<h1>Register</h1>
 <div class="card flex m-5 p-5 bg-secondary">
 
 <form  method="post" target="_self">

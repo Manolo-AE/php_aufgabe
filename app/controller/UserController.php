@@ -49,6 +49,11 @@ class UserController extends User
         if($this->id > 0 )
         {
             $result = $this->verifyPassword($password, $this->password);
+            if($result)
+            {
+                $_SESSION['user'] = $this->email;
+                $_SESSION['id'] = $this->id;
+            }
         }
 
         return $result;

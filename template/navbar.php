@@ -17,12 +17,16 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="test.php">test</a>
-        <li class="nav-item">
+          <li class="nav-item">
           <a class="nav-link" href="admin.php">admin</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="shop.php">shop</a>
         </li>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="logout.php">logout</a>
         </li>
       </ul>
     </div>
